@@ -8,11 +8,7 @@ import logoCat from './images/logo-cat.png';
 console.log('HAI');
 
 function createHeader() {
-  const header = document.getElementsByTagName('header');
-  const headerLogo = document.createElement('img');
-  headerLogo.src = logoCat;
-
-  header.appendChild(headerLogo);
+  const header = document.querySelector('header');
   
   // console.log(header);
   return header;
@@ -22,6 +18,4 @@ function createHeader() {
   logoCat
 } */
 
-// document.body.appendChild(createHeader());
 createHeader();
-// console.log(document.body);

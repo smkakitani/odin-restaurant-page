@@ -8,7 +8,10 @@
 }
 /*  */
 
-
+:root {
+  --color-darkest: #0f0f0f;
+  --color-brown: #493110;
+}
 
 @font-face {
   font-family: 'Comfortaa';
@@ -23,19 +26,48 @@
 
 
 body {
-  background: radial-gradient(circle at top left,transparent 9%, #835b23 10% ,#835b23 15% , transparent 16%) , radial-gradient(circle at bottom left,transparent 9%, #835b23 10% ,#835b23 15% , transparent 16%), radial-gradient(circle at top right ,transparent 9%, #835b23 10% ,#835b23 15% , transparent 16%) , radial-gradient(circle at bottom right,transparent 9%, #835b23 10% ,#835b23 15% , transparent 16%),radial-gradient(circle, transparent 25%, #272727  26%),linear-gradient(45deg, transparent 46%, #835b23 47%, #835b23 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #835b23 47%, #835b23 52%, transparent 53%);
+  background: radial-gradient(circle at top left,transparent 9%, #493110 10% ,#493110 15% , transparent 16%) , radial-gradient(circle at bottom left,transparent 9%, #493110 10% ,#493110 15% , transparent 16%), radial-gradient(circle at top right ,transparent 9%, #493110 10% ,#493110 15% , transparent 16%) , radial-gradient(circle at bottom right,transparent 9%, #493110 10% ,#493110 15% , transparent 16%),radial-gradient(circle, transparent 25%, #0f0f0f  26%),linear-gradient(45deg, transparent 46%, #493110 47%, #493110 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #493110 47%, #493110 52%, transparent 53%);
         background-size: 2em 2em;
-        background-color: #272727;
+        background-color: #0f0f0f;
         opacity: 1;
 }
 
 body {
-  display: grid;
+  display: grid;  
+  grid-template-rows: 2fr max-content 3fr;
   justify-content: center;
+  justify-items: center;
 }
 
 header {
   color: #fff;
   font-family: 'Indie Flower', cursive , sans-serif ;
   font-size: 3rem;
+
+  background-image: url('../images/logo-cat.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+header  p:first-child {
+  margin-top: 2.5em;
+}
+
+#tabs {
+  color: #fff/* var(--color-brown) */;
+  font-family: 'Comfortaa',  sans-serif;
+  font-size: 2rem;
+
+  width: 500px;
+  background-color: var(--color-brown);
+  padding: 0.5em;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+#tabs ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
 }
