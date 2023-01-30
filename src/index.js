@@ -1,9 +1,12 @@
 // import css
 import './styles/style.css';
 import './styles/home.css';
+
 // import js
 import { homePage } from './pages/home';
+import { menuPage } from './pages/menu';
 
+// import img
 import logoCat from './images/logo-cat.png';
 
 
@@ -19,4 +22,6 @@ function createHeader() {
 
 // createHeader();
 // document.body.appendChild(createHeader());
-homePage();
+
+// homePage();
+menuPage();

@@ -83,3 +83,7 @@ header  p:first-child {
   /* display: grid;
   justify-content: center; */
 }
+
+footer {
+  height: 3em;
+}

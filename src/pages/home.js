@@ -20,8 +20,7 @@ const homePage = function() {
   // append text
   const text = document.createElement('p');
   text.textContent = "This is The Boss, she owns it!";
-  homeDiv.appendChild(text);
-  
+  homeDiv.appendChild(text);  
 
   // console.log(mainContainer);
   return mainContainer;
