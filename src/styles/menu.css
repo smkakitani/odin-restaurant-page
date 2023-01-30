@@ -1,0 +1,33 @@
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mocha, .affogato, .cappuccino {
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.mocha img, .affogato img, .cappuccino img {
+  width: 80%;
+  height: auto;
+
+  border: 3px solid var(--color-brown);
+  border-radius: 50%;
+}
+
+.mocha p, .affogato p, .cappuccino p {
+  font-size: 2rem;
+}
+
+.mocha ul, .affogato ul, .cappuccino ul {
+  list-style: none;
+}
+
+.mocha li, .affogato li, .cappuccino li {
+  margin-bottom: 0.5em;
+}

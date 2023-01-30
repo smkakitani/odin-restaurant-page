@@ -80,6 +80,8 @@ header  p:first-child {
   width: 1000px;
   padding-top: 2em;
 
+  font-family: 'Comfortaa',  sans-serif;
+
   /* display: grid;
   justify-content: center; */
 }
