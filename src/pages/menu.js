@@ -1,11 +1,12 @@
 import coffeeMocha from '../images/mocha-coffee.jpg';
 import coffeeAffogato from '../images/affogato-coffee.jpg';
 import coffeeCappuccino from '../images/cappuccino-coffee.jpg';
+import coffeeFrappe from '../images/frappe-coffee.jpg';
 
 const drinkMocha = ["Espresso", "Chocolate", "Steamed milk"];
 const drinkAffogato = ["Espresso", "Vanilla ice cream"];
 const drinkCappuccino = ["Espresso", "Steamed milk foam"];
-const drinkFrappe = ["Instant coffee", "Milk"];
+const drinkFrappe = ["Instant coffee", "Milk", "Ice"];
 
 const menuPage = function() {
   const mainContainer = document.querySelector('#content');
@@ -17,7 +18,7 @@ const menuPage = function() {
   menuDiv.appendChild(menuMocha());
   menuDiv.appendChild(menuAffogato());
   menuDiv.appendChild(menuCappuccino());
-  // menuDiv.appendChild(menuFrappe());
+  menuDiv.appendChild(menuFrappe());
 
   // console.log(drinkMocha);
   return mainContainer;
@@ -97,6 +98,31 @@ const menuCappuccino = function() {
   cappuccinoDiv.appendChild(cappuccinoList);
 
   return cappuccinoDiv;
+};
+
+const menuFrappe = function() {
+  const frappeDiv =  document.createElement('div');
+  frappeDiv.classList.add('frappe');
+
+  // img
+  const frappeImg = document.createElement('img');
+  frappeImg.src = coffeeFrappe;  
+  frappeDiv.appendChild(frappeImg);
+
+  // description
+  const frappeTitle = document.createElement('p');
+  frappeTitle.textContent = "Frappe";  
+  frappeDiv.appendChild(frappeTitle);
+
+  const frappeList = document.createElement('ul');
+  drinkFrappe.forEach((item) => {
+    const li = document.createElement('li');
+    li.textContent = item;
+    frappeList.appendChild(li);
+  });
+  frappeDiv.appendChild(frappeList);
+
+  return frappeDiv;
 };
 
 export { menuPage };

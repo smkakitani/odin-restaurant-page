@@ -76,9 +76,9 @@ header  p:first-child {
 
 #content {
   background-color: var(--color-darkest-opacity);
-  height: 900px;
+  height: fit-content;
   width: 1000px;
-  padding-top: 2em;
+  padding: 2em 0;
 
   font-family: 'Comfortaa',  sans-serif;
 

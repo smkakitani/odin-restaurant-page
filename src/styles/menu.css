@@ -1,9 +1,10 @@
 .menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2em;
 }
 
-.mocha, .affogato, .cappuccino {
+.mocha, .affogato, .cappuccino, .frappe {
   color: #fff;
 
   display: flex;
@@ -12,22 +13,22 @@
   gap: 1em;
 }
 
-.mocha img, .affogato img, .cappuccino img {
-  width: 80%;
+.mocha img, .affogato img, .cappuccino img, .frappe img {
+  width: 70%;
   height: auto;
 
   border: 3px solid var(--color-brown);
   border-radius: 50%;
 }
 
-.mocha p, .affogato p, .cappuccino p {
+.mocha p, .affogato p, .cappuccino p, .frappe p {
   font-size: 2rem;
 }
 
-.mocha ul, .affogato ul, .cappuccino ul {
+.mocha ul, .affogato ul, .cappuccino ul, .frappe ul {
   list-style: none;
 }
 
-.mocha li, .affogato li, .cappuccino li {
+.mocha li, .affogato li, .cappuccino li, .frappe li {
   margin-bottom: 0.5em;
 }
