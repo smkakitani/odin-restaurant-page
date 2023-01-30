@@ -3,10 +3,12 @@ import catTheBoss from '../images/cat-and-coffee.jpg';
 const homePage = function() {
   const mainContainer = document.querySelector('#content');
   const homeDiv = document.createElement('div');
+  homeDiv.classList.add('home');
   mainContainer.appendChild(homeDiv);
+
   // append title
   const para = document.createElement('p');
-  homeDiv.classList.add('home');
+  
   para.textContent = "Cats. Coffee. CATS!";
   homeDiv.appendChild(para);
 
@@ -16,6 +18,9 @@ const homePage = function() {
   homeDiv.appendChild(theBossImg);
 
   // append text
+  const text = document.createElement('p');
+  text.textContent = "This is The Boss, she owns it!";
+  homeDiv.appendChild(text);
   
 
   // console.log(mainContainer);

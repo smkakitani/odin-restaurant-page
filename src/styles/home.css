@@ -12,3 +12,7 @@
   max-width: 90%;
   height: auto;
 }
+
+.home p:not(:first-child) {
+  font-size: 1rem;
+}
