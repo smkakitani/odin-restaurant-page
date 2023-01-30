@@ -26,6 +26,4 @@ const homePage = function() {
   return mainContainer;
 };
 
-
-
 export { homePage };
