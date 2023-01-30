@@ -1,0 +1,14 @@
+.home {
+  color: #fff;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 2rem;
+
+  display: grid;
+  justify-items: center;
+  gap: 2em;
+}
+
+.home img {
+  max-width: 90%;
+  height: auto;
+}

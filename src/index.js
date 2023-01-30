@@ -1,6 +1,8 @@
+// import css
 import './styles/style.css';
-import './styles/base.css';
 import './styles/home.css';
+// import js
+import { homePage } from './pages/home';
 
 import logoCat from './images/logo-cat.png';
 
@@ -8,14 +10,13 @@ import logoCat from './images/logo-cat.png';
 console.log('HAI');
 
 function createHeader() {
-  const header = document.querySelector('header');
+  const container = document.querySelector('#content');
+  // const container = document.createElement('div');
   
-  // console.log(header);
-  return header;
+  console.log(container);
+  return container;
 }
 
-/* function addLogo() {
-  logoCat
-} */
-
-createHeader();
+// createHeader();
+// document.body.appendChild(createHeader());
+homePage();

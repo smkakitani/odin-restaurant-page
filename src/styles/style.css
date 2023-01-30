@@ -11,6 +11,7 @@
 :root {
   --color-darkest: #0f0f0f;
   --color-brown: #493110;
+  --color-darkest-opacity: rgba(15, 15, 15, 0.8);
 }
 
 @font-face {
@@ -34,7 +35,7 @@ body {
 
 body {
   display: grid;  
-  grid-template-rows: 2fr max-content 3fr;
+  grid-template-rows: max-content max-content 3fr;
   justify-content: center;
   justify-items: center;
 }
@@ -43,6 +44,7 @@ header {
   color: #fff;
   font-family: 'Indie Flower', cursive , sans-serif ;
   font-size: 3rem;
+  margin-top: 0.5em;
 
   background-image: url('../images/logo-cat.png');
   background-size: contain;
@@ -59,7 +61,7 @@ header  p:first-child {
   font-size: 2rem;
 
   width: 500px;
-  background-color: var(--color-brown);
+  background-color: var(--color-darkest-opacity);
   padding: 0.5em;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -70,4 +72,13 @@ header  p:first-child {
 
   display: flex;
   justify-content: space-between;
+}
+
+#content {
+  background-color: var(--color-darkest-opacity);
+  height: 900px;
+  width: 1000px;
+
+  /* display: grid;
+  justify-content: center; */
 }
