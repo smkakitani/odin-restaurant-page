@@ -2,27 +2,21 @@
 import './styles/style.css';
 import './styles/home.css';
 import './styles/menu.css';
+import './styles/contact.css';
 
 // import js
 import { homePage } from './pages/home';
 import { menuPage } from './pages/menu';
-// import { contactPage } from './pages/contact';
+import { contactPage } from './pages/contact';
 
 console.log('HAI index.js');
 
-/* function setPageTab(element) {
-  if (element.className ===) {
-    element.classList.remove('current-tab');
-  } else if (element.className === "tab-home") {
-    element.classList.add('current-tab');
-  }
-} */
 const setDefaultPage = function() {
   const parentNode = document.getElementById('content');
 
   if (parentNode.firstElementChild === null) {
-    homePage();
-    // console.log('its nulllllll');
+    // homePage();
+    contactPage();
   } else {
     return;
   }
@@ -55,6 +49,7 @@ const switchTab = function() {
       while (parentNode.firstChild) {
         parentNode.removeChild(parentNode.firstChild);
       };
+      // give .current-tab and remove from others
       tabPage.forEach((element) => {
         if (element.className == eventTab) {
           element.classList.add('current-tab');          
@@ -64,6 +59,21 @@ const switchTab = function() {
       });
 
       menuPage();
+    } else if (eventTab === "tab-contact") {
+      // clear #content
+      while (parentNode.firstChild) {
+        parentNode.removeChild(parentNode.firstChild);
+      };
+      // give .current-tab and remove from others
+      tabPage.forEach((element) => {
+        if (element.className == eventTab) {
+          element.classList.add('current-tab');          
+        } else {
+          element.classList.remove('current-tab');
+        }     
+      });
+
+      contactPage();
     }
 
     // console.log(tabPage);

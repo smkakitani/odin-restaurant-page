@@ -1,0 +1,19 @@
+.contact {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+}
+
+.the-boss {
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+}
+
+.the-boss img {
+  width: 50%;
+  height: auto;
+
+  border-radius: 50%;
+}
