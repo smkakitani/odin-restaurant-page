@@ -9,14 +9,12 @@ import { homePage } from './pages/home';
 import { menuPage } from './pages/menu';
 import { contactPage } from './pages/contact';
 
-console.log('HAI index.js');
-
 const setDefaultPage = function() {
   const parentNode = document.getElementById('content');
 
   if (parentNode.firstElementChild === null) {
-    // homePage();
-    contactPage();
+    homePage();
+    console.log('homepage');
   } else {
     return;
   }
@@ -75,11 +73,7 @@ const switchTab = function() {
 
       contactPage();
     }
-
-    // console.log(tabPage);
   });
 };
-// document.body.appendChild(createHeader());
 switchTab();
 setDefaultPage();
-// menuPage();
