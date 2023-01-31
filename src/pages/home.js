@@ -23,7 +23,6 @@ const homePage = function() {
   text.textContent = "The Boss, she owns it!";
   homeDiv.appendChild(text);  
 
-  // console.log(mainContainer);
   return mainContainer;
 };
 

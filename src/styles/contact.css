@@ -1,19 +1,27 @@
 .contact {
   display: grid;
   grid-template-rows: 1fr 1fr;
-
+  gap: 2em;
 }
 
-.the-boss {
+.the-boss, .manager, .soldier {
   color: #fff;
 
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 2em;
 }
 
-.the-boss img {
-  width: 50%;
+.the-boss img, .manager img, .soldier img {
+  width: 30%;
   height: auto;
 
   border-radius: 50%;
+}
+
+.description p:first-child {
+  color: var(--color-brown);
+  font-size: 1.5rem;
+  margin-bottom: 1em;
 }

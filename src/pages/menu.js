@@ -21,8 +21,7 @@ const menuPage = function() {
   menuDiv.appendChild(menuAffogato());
   menuDiv.appendChild(menuCappuccino());
   menuDiv.appendChild(menuFrappe());
-
-  // console.log(drinkMocha);
+  
   return mainContainer;
 };
 
