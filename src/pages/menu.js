@@ -3,10 +3,12 @@ import coffeeAffogato from '../images/affogato-coffee.jpg';
 import coffeeCappuccino from '../images/cappuccino-coffee.jpg';
 import coffeeFrappe from '../images/frappe-coffee.jpg';
 
+// drinks
 const drinkMocha = ["Espresso", "Chocolate", "Steamed milk"];
 const drinkAffogato = ["Espresso", "Vanilla ice cream"];
 const drinkCappuccino = ["Espresso", "Steamed milk foam"];
 const drinkFrappe = ["Instant coffee", "Milk", "Ice"];
+
 
 const menuPage = function() {
   const mainContainer = document.querySelector('#content');
@@ -49,7 +51,7 @@ const menuMocha = function() {
 
   return mochaDiv;
 };
-
+// affogato
 const menuAffogato = function() {
   const affogatoDiv = document.createElement('div');
   affogatoDiv.classList.add('affogato');
@@ -74,7 +76,7 @@ const menuAffogato = function() {
 
   return affogatoDiv;
 };
-
+// cappuccino
 const menuCappuccino = function() {
   const cappuccinoDiv =  document.createElement('div');
   cappuccinoDiv.classList.add('cappuccino');
@@ -99,7 +101,7 @@ const menuCappuccino = function() {
 
   return cappuccinoDiv;
 };
-
+// frappe
 const menuFrappe = function() {
   const frappeDiv =  document.createElement('div');
   frappeDiv.classList.add('frappe');
